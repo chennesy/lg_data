@@ -4,3 +4,4 @@
 #except for
 !.gitignore
 !lg_data_pub.ipynb
+!table.html
