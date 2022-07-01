@@ -3,33 +3,34 @@
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
   
-<script type="text/css">
- div#container {
-    width: 80%;
+<style type="text/css">
+#container {
+    width: 90vw;
+    margin: auto;
 }
-  
+th{
+  text-align: left;
+}
  
-</script>
+</style>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
 
 <script type="text/javascript" charset="utf8">
-  $(document).ready( function () {
+$(document).ready( function () {
     $('#table_id').DataTable(
-      {"lengthMenu": [[25, 50, 100, -1], [25, 50, 100, "All"]]});
-} );
+      { "lengthMenu": [[25, 50, 100, -1], [25, 50, 100, "All"]],
+        "autoWidth": false,
+        "columns": [{"width":"5%"}, {"width":"30%"}, {"width":"10%"}, {"width":"10%"}, {"width":"10%"}, {"width":"35%"}]
+      });
+});
 </script>
+
 <body>
   <div id='container'>
   <h1>200 most common data resources on academic LibGuides</h1>
   <p>See the <a href = 'https://github.com/chennesy/lg_data/'>GitHub repo</a> for code and context.</p>
 
   <table id="table_id" class="display" data-page-length='200'>
-  <col style="width:10%">
-  <col style="width:30%">
-  <col style="width:10%">
-  <col style="width:10%">
-  <col style="width:30%">
-  <col style="width:10%">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -1599,7 +1600,7 @@
       <td>16.26%</td>
       <td>69</td>
       <td>free</td>
-      <td>web.worldbank.org/WBSITE/EXTERNAL/TOPICS/EXTEDUCATION/EXTDATASTATISTICS/EXTEDSTATS/0,,menuPK:3232818~pagePK:64168427~piPK:64168435~theSitePK:3232764,00.html</td>
+      <td>web.worldbank.org/WBSITE/EXTERNAL/TOPICS/EXTEDUCATION/...</td>
     </tr>
     <tr>
       <th>196</th>
