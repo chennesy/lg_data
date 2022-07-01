@@ -1,0 +1,1643 @@
+<!doctype html><html lang="en">
+<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+  
+<script type="text/css">
+ div#table_id_wrapper {
+    width: 80%;
+}
+  
+ 
+</script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+
+<script type="text/javascript" charset="utf8">
+  $(document).ready( function () {
+    $('#table_id').DataTable(
+      {"lengthMenu": [[25, 50, 100, -1], [25, 50, 100, "All"]]});
+} );
+</script>
+<body>
+<div class='container'>
+  <table id="table_id" class="display" data-page-length='200'>
+  <col style="width:10%">
+  <col style="width:30%">
+  <col style="width:10%">
+  <col style="width:10%">
+  <col style="width:30%">
+  <col style="width:10%">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>percent_of_sites</th>
+      <th>count</th>
+      <th>url</th>
+      <th>access</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>icpsr</td>
+      <td>94.31%</td>
+      <td>1834</td>
+      <td>www.icpsr.umich.edu</td>
+      <td>hybrid</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>statistical insight (proquest)</td>
+      <td>61.79%</td>
+      <td>1532</td>
+      <td>proxy2.library.illinois.edu/login?url=search.proquest.com/statistical</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>social explorer</td>
+      <td>78.86%</td>
+      <td>1430</td>
+      <td>www.socialexplorer.com</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>data planet (sage)</td>
+      <td>50.41%</td>
+      <td>1318</td>
+      <td>go.openathens.net/redirector/fiu.edu?url=dataplanet.sagepub.com</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>u.s. census: data</td>
+      <td>90.24%</td>
+      <td>1145</td>
+      <td>data.census.gov/cedsci</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>statista</td>
+      <td>64.23%</td>
+      <td>1104</td>
+      <td>go.openathens.net/redirector/fiu.edu?url=http%3A%2F%2Fwww.statista.com</td>
+      <td>hybrid</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>roper center: ipoll</td>
+      <td>80.49%</td>
+      <td>1090</td>
+      <td>proxy2.library.illinois.edu/login?url=ropercenter.cornell.edu</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>statistical abstract of the united states (proquest)</td>
+      <td>78.05%</td>
+      <td>1058</td>
+      <td>www.libraries.rutgers.edu/indexes/statabus</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>undata (united nations)</td>
+      <td>88.62%</td>
+      <td>1054</td>
+      <td>data.un.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>u.s. census bureau</td>
+      <td>93.50%</td>
+      <td>956</td>
+      <td>www.census.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>data.gov</td>
+      <td>94.31%</td>
+      <td>954</td>
+      <td>www.data.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>nchs (u.s. national center for health statistics)</td>
+      <td>86.99%</td>
+      <td>856</td>
+      <td>www.cdc.gov/nchs</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>oecd ilibrary</td>
+      <td>69.11%</td>
+      <td>851</td>
+      <td>www.oecd-ilibrary.org</td>
+      <td>hybrid</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>u.s. census: american factfinder</td>
+      <td>83.74%</td>
+      <td>720</td>
+      <td>factfinder.census.gov/faces/nav/jsf/pages/index.xhtml</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>historical statistics of the united states (cambridge)</td>
+      <td>74.80%</td>
+      <td>684</td>
+      <td>hsus.cambridge.org/HSUSWeb</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>simplyanalytics</td>
+      <td>44.72%</td>
+      <td>672</td>
+      <td>go.openathens.net/redirector/fiu.edu?url=app.simplyanalytics.com</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>policymap</td>
+      <td>43.09%</td>
+      <td>645</td>
+      <td>library.bu.edu/policymap</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>world bank: world development indicators</td>
+      <td>65.85%</td>
+      <td>599</td>
+      <td>data.worldbank.org/data-catalog/world-development-indicators</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>nces (u.s. national center for education statistics)</td>
+      <td>86.99%</td>
+      <td>546</td>
+      <td>nces.ed.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>world bank: data</td>
+      <td>76.42%</td>
+      <td>545</td>
+      <td>data.worldbank.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>bls (u.s. bureau of labor statistics)</td>
+      <td>82.93%</td>
+      <td>535</td>
+      <td>www.bls.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>eurostat (european commission)</td>
+      <td>80.49%</td>
+      <td>501</td>
+      <td>ec.europa.eu/eurostat</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>who: global health observatory (world health organization)</td>
+      <td>78.05%</td>
+      <td>491</td>
+      <td>www.who.int/gho/en</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>wharton research data services (wrds)</td>
+      <td>43.90%</td>
+      <td>470</td>
+      <td>nrs.harvard.edu/urn-3:hul.eresource:WRDS</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>imf data (international monetary fund)</td>
+      <td>74.80%</td>
+      <td>445</td>
+      <td>data.imf.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>u.s. census: statistical abstract series</td>
+      <td>71.54%</td>
+      <td>442</td>
+      <td>www.census.gov/library/publications/time-series/statistical_abstracts.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>bjs (u.s. bureau of justice statistics)</td>
+      <td>78.86%</td>
+      <td>437</td>
+      <td>www.bjs.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>bea (u.s. bureau of economic analysis)</td>
+      <td>74.80%</td>
+      <td>422</td>
+      <td>www.bea.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>pew research center</td>
+      <td>60.16%</td>
+      <td>386</td>
+      <td>www.pewresearch.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>usa.gov: data and statistics</td>
+      <td>69.92%</td>
+      <td>385</td>
+      <td>www.usa.gov/statistics</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>cdc: data and statistics</td>
+      <td>73.17%</td>
+      <td>361</td>
+      <td>www.cdc.gov/DataStatistics</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>world bank: databank</td>
+      <td>49.59%</td>
+      <td>348</td>
+      <td>databank.worldbank.org/data/home.aspx</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>re3data.org: registry of research data repositories</td>
+      <td>66.67%</td>
+      <td>339</td>
+      <td>www.re3data.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>ipums nhgis (national historical geographic information system)</td>
+      <td>62.60%</td>
+      <td>334</td>
+      <td>www.nhgis.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>general social survey (gss)</td>
+      <td>60.98%</td>
+      <td>333</td>
+      <td>gss.norc.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>world factbook (cia)</td>
+      <td>65.85%</td>
+      <td>321</td>
+      <td>www.cia.gov/the-world-factbook</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>polling the nations</td>
+      <td>45.53%</td>
+      <td>313</td>
+      <td>nrs.harvard.edu/urn-3:hul.eresource:pollnati</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>fred: federal reserve economic data (federal reserve bank of st. louis)</td>
+      <td>69.11%</td>
+      <td>296</td>
+      <td>research.stlouisfed.org/fred2</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>cdc: wonder</td>
+      <td>60.98%</td>
+      <td>282</td>
+      <td>wonder.cdc.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>un comtrade (united nations commodity trade statistics)</td>
+      <td>53.66%</td>
+      <td>281</td>
+      <td>comtrade.un.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>kids count data center (annie e. casey foundation)</td>
+      <td>64.23%</td>
+      <td>274</td>
+      <td>datacenter.kidscount.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>faostat (food and agriculture organization of the united nations)</td>
+      <td>52.03%</td>
+      <td>273</td>
+      <td>www.fao.org/faostat/en/#home</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>uis (unesco institute for statistics)</td>
+      <td>63.41%</td>
+      <td>272</td>
+      <td>uis.unesco.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>google dataset search</td>
+      <td>54.47%</td>
+      <td>267</td>
+      <td>toolbox.google.com/datasetsearch</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>state health facts (kaiser family foundation)</td>
+      <td>61.79%</td>
+      <td>266</td>
+      <td>www.statehealthfacts.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>nchs: faststats (u.s. national center for health statistics)</td>
+      <td>60.98%</td>
+      <td>263</td>
+      <td>www.cdc.gov/nchs/fastats</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>unsd (united nations statistics division)</td>
+      <td>52.03%</td>
+      <td>253</td>
+      <td>unstats.un.org/home</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>ipums</td>
+      <td>50.41%</td>
+      <td>249</td>
+      <td>www.ipums.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>passport (euromonitor international)</td>
+      <td>34.96%</td>
+      <td>249</td>
+      <td>ezproxy.fiu.edu/login?url=www.portal.euromonitor.com</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>nass (u.s. national agricultural statistics services)</td>
+      <td>51.22%</td>
+      <td>238</td>
+      <td>www.nass.usda.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>u.s. census: census of population and housing</td>
+      <td>36.59%</td>
+      <td>238</td>
+      <td>www.census.gov/prod/www/decennial.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>dataverse (harvard)</td>
+      <td>51.22%</td>
+      <td>234</td>
+      <td>dataverse.harvard.edu</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>u.s. census: american community survey</td>
+      <td>60.98%</td>
+      <td>231</td>
+      <td>www.census.gov/programs-surveys/acs</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>cdc: behavioral risk factor surveillance system (brfss)</td>
+      <td>49.59%</td>
+      <td>215</td>
+      <td>www.cdc.gov/brfss</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>imf data: international financial statistics (international monetary fund)</td>
+      <td>36.59%</td>
+      <td>211</td>
+      <td>data.imf.org/IFS</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>china data online</td>
+      <td>33.33%</td>
+      <td>209</td>
+      <td>ezproxy.fiu.edu/login?url=china-data-online.com</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>childstats.gov (federal interagency forum on child and family statistics)</td>
+      <td>61.79%</td>
+      <td>207</td>
+      <td>www.childstats.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>fbi: uniform crime reporting program (u.s. federal bureau of investigation)</td>
+      <td>58.54%</td>
+      <td>207</td>
+      <td>www.fbi.gov/about-us/cjis/ucr/ucr</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>eia (u.s. energy information administration)</td>
+      <td>54.47%</td>
+      <td>196</td>
+      <td>www.eia.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>ilostat (international labour organization)</td>
+      <td>40.65%</td>
+      <td>196</td>
+      <td>www.ilo.org/ilostat</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>county health rankings and roadmaps (university of wisconsin)</td>
+      <td>51.22%</td>
+      <td>196</td>
+      <td>www.countyhealthrankings.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>american national election studies (anes)</td>
+      <td>49.59%</td>
+      <td>194</td>
+      <td>www.electionstudies.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>nationmaster</td>
+      <td>45.53%</td>
+      <td>193</td>
+      <td>www.nationmaster.com/index.php</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>sourcebook of criminal justice statistics (albany)</td>
+      <td>53.66%</td>
+      <td>192</td>
+      <td>www.albany.edu/sourcebook</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>business source complete (ebsco)</td>
+      <td>34.15%</td>
+      <td>191</td>
+      <td>search.ebscohost.com/login.aspx?authtype=shib,uid&amp;custid=s8862125&amp;profile=ehost&amp;defaultdb=bth</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>world bank: data catalog</td>
+      <td>36.59%</td>
+      <td>191</td>
+      <td>data.worldbank.org/data-catalog</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>oecd.stat</td>
+      <td>36.59%</td>
+      <td>188</td>
+      <td>stats.oecd.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>arda (association of religion data archives)</td>
+      <td>48.78%</td>
+      <td>186</td>
+      <td>www.thearda.com</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>oecd data</td>
+      <td>39.84%</td>
+      <td>182</td>
+      <td>data.oecd.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>u.s. census: quickfacts</td>
+      <td>43.90%</td>
+      <td>181</td>
+      <td>www.census.gov/quickfacts/fact/table/US/PST045219</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>ahrq: healthcare cost and utilization project (u.s. agency for healthcare research and quality)</td>
+      <td>47.97%</td>
+      <td>181</td>
+      <td>hcupnet.ahrq.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>nces: digest of education statistics (u.s. national center for education statistics)</td>
+      <td>43.90%</td>
+      <td>179</td>
+      <td>nces.ed.gov/programs/digest</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>icpsr: national archive of criminal justice data (nacjd)</td>
+      <td>52.03%</td>
+      <td>179</td>
+      <td>www.icpsr.umich.edu/icpsrweb/content/NACJD/index.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>data citation index (web of science/clarivate)</td>
+      <td>32.52%</td>
+      <td>177</td>
+      <td>isiknowledge.com/drci</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>economist intelligence unit (eiu)</td>
+      <td>21.14%</td>
+      <td>175</td>
+      <td>id.lib.harvard.edu/alma/990081655110203941/catalog</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>world values survey</td>
+      <td>46.34%</td>
+      <td>175</td>
+      <td>www.worldvaluessurvey.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>ipums usa</td>
+      <td>43.09%</td>
+      <td>170</td>
+      <td>usa.ipums.org/usa</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>bts (u.s. bureau of transportation statistics)</td>
+      <td>50.41%</td>
+      <td>170</td>
+      <td>www.bts.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>ibisworld</td>
+      <td>43.09%</td>
+      <td>168</td>
+      <td>ezproxy.fiu.edu/login?url=www.ibisworld.com</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>cdc (u.s. centers for disease control and prevention)</td>
+      <td>37.40%</td>
+      <td>168</td>
+      <td>www.cdc.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>nass: census of agriculture (u.s. national agricultural statistics services)</td>
+      <td>39.02%</td>
+      <td>163</td>
+      <td>www.agcensus.usda.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>nchs: health, united states (u.s. national center for health statistics)</td>
+      <td>47.15%</td>
+      <td>161</td>
+      <td>www.cdc.gov/nchs/hus.htm</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>europa world plus</td>
+      <td>26.83%</td>
+      <td>161</td>
+      <td>uclibs.org/PID/115872</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>u.s. census: international database</td>
+      <td>45.53%</td>
+      <td>159</td>
+      <td>www.census.gov/programs-surveys/international-programs/about/idb.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>ncei (u.s. national centers for environmental information)</td>
+      <td>46.34%</td>
+      <td>158</td>
+      <td>www.ncdc.noaa.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>health data, tools, and statistics (phpartners)</td>
+      <td>36.59%</td>
+      <td>156</td>
+      <td>phpartners.org/health_stats.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>healthdata.gov</td>
+      <td>52.03%</td>
+      <td>156</td>
+      <td>www.healthdata.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>gallup analytics</td>
+      <td>19.51%</td>
+      <td>156</td>
+      <td>nrs.harvard.edu/urn-3:hul.eresource:gallup</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>nexis uni</td>
+      <td>39.02%</td>
+      <td>154</td>
+      <td>ezproxy.fiu.edu/login?url=www.nexisuni.com</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>u.s. census: economic census</td>
+      <td>41.46%</td>
+      <td>152</td>
+      <td>www.census.gov/programs-surveys/economic-census.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>mergent online</td>
+      <td>36.59%</td>
+      <td>151</td>
+      <td>research.library.gsu.edu/DB_MERGENT</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>demographic and health surveys (dhs program)</td>
+      <td>35.77%</td>
+      <td>146</td>
+      <td>www.measuredhs.com</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>sage research methods</td>
+      <td>26.02%</td>
+      <td>145</td>
+      <td>go.openathens.net/redirector/fiu.edu?url=https%3A%2F%2Fmethods.sagepub.com%2F</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>who (world health organization)</td>
+      <td>43.09%</td>
+      <td>143</td>
+      <td>www.who.int/en</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>international historical statistics (springer)</td>
+      <td>9.76%</td>
+      <td>136</td>
+      <td>proxy01.its.virginia.edu/login?url=link.springer.com/referencework/10.1057/978-1-137-30568-8</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>samhsa: data and dissemination (u.s. substance abuse and mental health services administration)</td>
+      <td>34.96%</td>
+      <td>134</td>
+      <td>www.samhsa.gov/data</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>cdc: morbidity and mortality weekly report (mmwr)</td>
+      <td>38.21%</td>
+      <td>134</td>
+      <td>www.cdc.gov/mmwr</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>nces: integrated postsecondary education data system (ipeds/u.s. national center for education statistics)</td>
+      <td>47.97%</td>
+      <td>134</td>
+      <td>nces.ed.gov/ipeds</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>dryad</td>
+      <td>43.09%</td>
+      <td>133</td>
+      <td>datadryad.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>nber: public use data archive (u.s. national bureau of economic research)</td>
+      <td>36.59%</td>
+      <td>130</td>
+      <td>www.nber.org/data</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>statistics canada</td>
+      <td>33.33%</td>
+      <td>127</td>
+      <td>www.statcan.gc.ca/start-debut-eng.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>imf elibrary (international monetary fund)</td>
+      <td>26.83%</td>
+      <td>123</td>
+      <td>www.elibrary.imf.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>web of science (clarivate)</td>
+      <td>39.84%</td>
+      <td>122</td>
+      <td>nrs.harvard.edu/urn-3:hul.eresource:scicitin</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>nces: condition of education (coe/u.s. national center for education statistics)</td>
+      <td>30.89%</td>
+      <td>122</td>
+      <td>nces.ed.gov/programs/coe</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>bls: consumer expenditure surveys (cex/u.s. bureau of labor statistics)</td>
+      <td>35.77%</td>
+      <td>118</td>
+      <td>www.bls.gov/cex</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>u.s. census: current population survey</td>
+      <td>31.71%</td>
+      <td>115</td>
+      <td>www.census.gov/programs-surveys/cps.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>unsd: national statistical offices (united nations statistics division)</td>
+      <td>21.95%</td>
+      <td>114</td>
+      <td>unstats.un.org/unsd/methods/inter-natlinks/sd_natstat.asp</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>usda: geospatial data gateway (u.s. department of agriculture)</td>
+      <td>37.40%</td>
+      <td>113</td>
+      <td>datagateway.nrcs.usda.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>u.s. census: tiger/line shapefiles</td>
+      <td>33.33%</td>
+      <td>113</td>
+      <td>www.census.gov/geo/maps-data/data/tiger.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>usgs: earthexplorer (u.s. geological survey)</td>
+      <td>37.40%</td>
+      <td>113</td>
+      <td>earthexplorer.usgs.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>dartmouth atlas of health care</td>
+      <td>35.77%</td>
+      <td>112</td>
+      <td>www.dartmouthatlas.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>nchs: national vital statistics system (nvss/u.s. national center for health statistics)</td>
+      <td>28.46%</td>
+      <td>112</td>
+      <td>www.cdc.gov/nchs/nvss.htm</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>nchs: national health and nutrition examination survey (u.s. national center for health statistics)</td>
+      <td>37.40%</td>
+      <td>112</td>
+      <td>www.cdc.gov/nchs/nhanes.htm</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>global financial data</td>
+      <td>14.63%</td>
+      <td>111</td>
+      <td>library.princeton.edu/node/3815</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>oecd ilibrary: statistics</td>
+      <td>22.76%</td>
+      <td>110</td>
+      <td>www.oecd-ilibrary.org/statistics</td>
+      <td>hybrid</td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>fraser: economic research (federal reserve bank of st. louis)</td>
+      <td>33.33%</td>
+      <td>110</td>
+      <td>fraser.stlouisfed.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>datastream (refinitiv)</td>
+      <td>14.63%</td>
+      <td>109</td>
+      <td>libguides.fiu.edu/datastream</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>global health data exchange (institute for health metrics and evaluation)</td>
+      <td>34.96%</td>
+      <td>109</td>
+      <td>ghdx.healthdata.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>unep: environmental data explorer (united nations environment programme)</td>
+      <td>34.96%</td>
+      <td>109</td>
+      <td>geodata.grid.unep.ch</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>cross-national time-series (cnts) data archive</td>
+      <td>23.58%</td>
+      <td>108</td>
+      <td>www.databanksinternational.com/DATA_with_LINKS</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>ers (usda economic research service)</td>
+      <td>36.59%</td>
+      <td>108</td>
+      <td>www.ers.usda.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>u.s. census: international statistical programs</td>
+      <td>21.14%</td>
+      <td>107</td>
+      <td>www.census.gov/programs-surveys/international-programs/about/related-sites.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>dhs: immigration statistics (u.s. department of homeland security)</td>
+      <td>33.33%</td>
+      <td>105</td>
+      <td>www.dhs.gov/immigration-statistics</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>google public data</td>
+      <td>34.15%</td>
+      <td>104</td>
+      <td>www.google.com/publicdata/directory</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>,,</td>
+      <td>28.46%</td>
+      <td>104</td>
+      <td>www.latinobarometro.org/lat.jsp</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>undp: human development reports (united nations development programme)</td>
+      <td>23.58%</td>
+      <td>103</td>
+      <td>hdr.undp.org/en/reports</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>global insight (ihs/wrds)</td>
+      <td>10.57%</td>
+      <td>101</td>
+      <td>libguides.princeton.edu/GlobalInsight</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>ipums international</td>
+      <td>30.08%</td>
+      <td>100</td>
+      <td>international.ipums.org/international</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>nass: statistics by state (u.s. national agricultural statistics services)</td>
+      <td>26.02%</td>
+      <td>100</td>
+      <td>www.nass.usda.gov/Statistics_by_State/Michigan/index.php</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>nchs: national health interview survey (u.s. national center for health statistics)</td>
+      <td>30.08%</td>
+      <td>100</td>
+      <td>www.cdc.gov/nchs/nhis.htm</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>afrobarometer</td>
+      <td>31.71%</td>
+      <td>100</td>
+      <td>www.afrobarometer.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>ahrq: data (u.s. agency for healthcare research and quality)</td>
+      <td>32.52%</td>
+      <td>99</td>
+      <td>www.ahrq.gov/research/data/index.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>unctadstat (united nations conference on trade and development)</td>
+      <td>26.83%</td>
+      <td>98</td>
+      <td>unctadstat.unctad.org/EN</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>nimh: statistics (u.s. national institute of mental health)</td>
+      <td>34.96%</td>
+      <td>98</td>
+      <td>www.nimh.nih.gov/health/statistics/index.shtml</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>nces: common core of data (u.s. national center for education statistics)</td>
+      <td>32.52%</td>
+      <td>98</td>
+      <td>nces.ed.gov/ccd</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>cms: research, statistics, data and systems (u.s. centers for medicare and medicaid services)</td>
+      <td>34.15%</td>
+      <td>98</td>
+      <td>www.cms.gov/Research-Statistics-Data-and-Systems/Research-Statistics-Data-and-Systems.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>u.s. census: economic indicators</td>
+      <td>29.27%</td>
+      <td>97</td>
+      <td>www.census.gov/economic-indicators</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>proquest congressional</td>
+      <td>29.27%</td>
+      <td>97</td>
+      <td>guides.lib.unc.edu/go.php?c=23608323</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>world bank</td>
+      <td>30.89%</td>
+      <td>96</td>
+      <td>www.worldbank.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>unicef data</td>
+      <td>32.52%</td>
+      <td>95</td>
+      <td>data.unicef.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>doe: campus safety and security (u.s. department of education)</td>
+      <td>22.76%</td>
+      <td>94</td>
+      <td>ope.ed.gov/security</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td>bls: data tools (u.s. bureau of labor statistics)</td>
+      <td>34.96%</td>
+      <td>94</td>
+      <td>www.bls.gov/data</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>gallup</td>
+      <td>31.71%</td>
+      <td>93</td>
+      <td>www.gallup.com/home.aspx</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>bts: transtats (u.s. bureau of transportation statistics)</td>
+      <td>23.58%</td>
+      <td>92</td>
+      <td>www.transtats.bts.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>america's health rankings (united health foundation)</td>
+      <td>26.83%</td>
+      <td>92</td>
+      <td>www.americashealthrankings.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>ncses (u.s. national center for science and engineering statistics)</td>
+      <td>30.08%</td>
+      <td>92</td>
+      <td>www.nsf.gov/statistics</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>u.s. census: county business patterns</td>
+      <td>33.33%</td>
+      <td>92</td>
+      <td>www.census.gov/programs-surveys/cbp.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>indiastat</td>
+      <td>17.89%</td>
+      <td>91</td>
+      <td>nrs.harvard.edu/urn-3:hul.eresource:indiasta</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>ahrq: medical expenditure panel survey (u.s. agency for healthcare research and quality)</td>
+      <td>34.96%</td>
+      <td>89</td>
+      <td>meps.ahrq.gov/mepsweb</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>mintel academic</td>
+      <td>20.33%</td>
+      <td>89</td>
+      <td>resolver.library.cornell.edu/misc/4358198</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td>cq voting and elections collection</td>
+      <td>21.95%</td>
+      <td>88</td>
+      <td>uclibs.org/PID/37732</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td>ahrq (u.s. agency for healthcare research and quality)</td>
+      <td>26.83%</td>
+      <td>88</td>
+      <td>www.ahrq.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td>unsd: demographic yearbook (united nations statistics division)</td>
+      <td>28.46%</td>
+      <td>88</td>
+      <td>unstats.un.org/unsd/demographic/products/dyb/dyb2.htm</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td>rkma market research reports</td>
+      <td>0.81%</td>
+      <td>88</td>
+      <td>go.openathens.net/redirector/fiu.edu?url=www.rkma.com/FIU/Library1</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>demographicsnow (gale)</td>
+      <td>3.25%</td>
+      <td>87</td>
+      <td>link.gale.com/apps/DNOW?u=miam11506</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>156</th>
+      <td>qualitative data repository (syracuse)</td>
+      <td>26.02%</td>
+      <td>87</td>
+      <td>qdr.syr.edu</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>economist intelligence unit (eiu): country reports</td>
+      <td>20.33%</td>
+      <td>87</td>
+      <td>search.proquest.com.ezproxy.lib.vt.edu/eiuarchive/advanced/?accountid=14826</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>158</th>
+      <td>cahmi: data resource center for child and adolescent health (child and adolescent health measurement intiative)</td>
+      <td>26.83%</td>
+      <td>87</td>
+      <td>childhealthdata.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>159</th>
+      <td>data usa (deloitte/data wheel)</td>
+      <td>29.27%</td>
+      <td>84</td>
+      <td>datausa.io</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>160</th>
+      <td>correlates of war project</td>
+      <td>26.83%</td>
+      <td>84</td>
+      <td>www.correlatesofwar.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>161</th>
+      <td>figshare</td>
+      <td>30.89%</td>
+      <td>83</td>
+      <td>figshare.com</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>162</th>
+      <td>rand state statistics</td>
+      <td>10.57%</td>
+      <td>83</td>
+      <td>www.randstatestats.org</td>
+      <td>hybrid</td>
+    </tr>
+    <tr>
+      <th>163</th>
+      <td>aging stats (federal interagency forum on aging: related statistics)</td>
+      <td>36.59%</td>
+      <td>83</td>
+      <td>agingstats.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>164</th>
+      <td>aiddata (william and mary)</td>
+      <td>22.76%</td>
+      <td>82</td>
+      <td>aiddata.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>165</th>
+      <td>factiva</td>
+      <td>28.46%</td>
+      <td>81</td>
+      <td>nrs.harvard.edu/urn-3:hul.eresource:factivac</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>166</th>
+      <td>who: global health observatory data repository (world health organization)</td>
+      <td>21.14%</td>
+      <td>81</td>
+      <td>apps.who.int/gho/data/?theme=main</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>167</th>
+      <td>cdc: web-based injury statistics query and reporting system (wisqars)</td>
+      <td>32.52%</td>
+      <td>81</td>
+      <td>www.cdc.gov/injury/wisqars/index.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>168</th>
+      <td>data axle</td>
+      <td>21.95%</td>
+      <td>80</td>
+      <td>ezproxy.lib.uh.edu/login?url=www.referenceusa.com</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>169</th>
+      <td>bloomberg law</td>
+      <td>3.25%</td>
+      <td>79</td>
+      <td>www.bloomberglaw.com/product/blaw/litigation/analytics/new</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>170</th>
+      <td>our world in data</td>
+      <td>21.95%</td>
+      <td>78</td>
+      <td>ourworldindata.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td>prb (population reference bureau)</td>
+      <td>26.02%</td>
+      <td>78</td>
+      <td>www.prb.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>172</th>
+      <td>oecd (organisation for economic co-operation and development)</td>
+      <td>30.08%</td>
+      <td>78</td>
+      <td>www.oecd.org</td>
+      <td>hybrid</td>
+    </tr>
+    <tr>
+      <th>173</th>
+      <td>s&amp;p netadvantage</td>
+      <td>21.95%</td>
+      <td>78</td>
+      <td>libproxy.usc.edu/login?url=www.netadvantage.standardpoor.com</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td>historical census browser (university of virginia)</td>
+      <td>28.46%</td>
+      <td>77</td>
+      <td>mapserver.lib.virginia.edu</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>175</th>
+      <td>pew research: download datasets</td>
+      <td>27.64%</td>
+      <td>77</td>
+      <td>www.pewresearch.org/download-datasets</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>176</th>
+      <td>penn world table (groningen)</td>
+      <td>23.58%</td>
+      <td>76</td>
+      <td>www.rug.nl/ggdc/productivity/pwt</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>177</th>
+      <td>google scholar</td>
+      <td>28.46%</td>
+      <td>76</td>
+      <td>scholar.google.com</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>178</th>
+      <td>mergent intellect</td>
+      <td>18.70%</td>
+      <td>76</td>
+      <td>libproxy.library.unt.edu/login?url=www.mergentintellect.com</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>179</th>
+      <td>bls: statistical sites on the world wide web (u.s. bureau of labor statistics)</td>
+      <td>21.14%</td>
+      <td>76</td>
+      <td>www.bls.gov/bls/other.htm</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>180</th>
+      <td>emis intelligence</td>
+      <td>11.38%</td>
+      <td>75</td>
+      <td>nrs.harvard.edu/urn-3:hul.eresource:isiemerg</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>181</th>
+      <td>simmons insights (mri)</td>
+      <td>17.07%</td>
+      <td>75</td>
+      <td>insights-mrisimmons-com.echo.louisville.edu/university/louisville</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>182</th>
+      <td>nci: surveillance, epidemiology, and end results program (seer/u.s. national cancer institute)</td>
+      <td>27.64%</td>
+      <td>75</td>
+      <td>seer.cancer.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>183</th>
+      <td>dataone</td>
+      <td>27.64%</td>
+      <td>74</td>
+      <td>www.dataone.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>184</th>
+      <td>undp: human development data center (united nations development programme)</td>
+      <td>26.02%</td>
+      <td>74</td>
+      <td>hdr.undp.org/en/statistics</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>185</th>
+      <td>irs: tax statistics (u.s. internal revenue service)</td>
+      <td>31.71%</td>
+      <td>73</td>
+      <td>www.irs.gov/statistics</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>186</th>
+      <td>hrsa: data (u.s. health resources and services administration)</td>
+      <td>23.58%</td>
+      <td>73</td>
+      <td>datawarehouse.hrsa.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>187</th>
+      <td>bls: injuries, illnesses, and fatalities (u.s. bureau of labor statistics)</td>
+      <td>18.70%</td>
+      <td>73</td>
+      <td>www.bls.gov/iif</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>188</th>
+      <td>naep: nation's report card (u.s. national assessment of educational progress)</td>
+      <td>21.95%</td>
+      <td>72</td>
+      <td>nces.ed.gov/nationsreportcard</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>189</th>
+      <td>data.gov: data catalog</td>
+      <td>26.83%</td>
+      <td>72</td>
+      <td>catalog.data.gov/dataset</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>190</th>
+      <td>nces: international activities program (iap/u.s. national center for education statistics)</td>
+      <td>20.33%</td>
+      <td>71</td>
+      <td>nces.ed.gov/surveys/international</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>191</th>
+      <td>cessda (consortium of european social science data archives)</td>
+      <td>22.76%</td>
+      <td>71</td>
+      <td>www.cessda.eu</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>192</th>
+      <td>offstats: official statistics on the web</td>
+      <td>23.58%</td>
+      <td>71</td>
+      <td>www.offstats.auckland.ac.nz</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>193</th>
+      <td>datacite</td>
+      <td>22.76%</td>
+      <td>70</td>
+      <td>search.datacite.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>194</th>
+      <td>scifinder (chemical abstracts service)</td>
+      <td>23.58%</td>
+      <td>69</td>
+      <td>ezproxy.library.unlv.edu/login?url=scifinder.cas.org</td>
+      <td>paid</td>
+    </tr>
+    <tr>
+      <th>195</th>
+      <td>world bank: education statistics (edstats)</td>
+      <td>16.26%</td>
+      <td>69</td>
+      <td>web.worldbank.org/WBSITE/EXTERNAL/TOPICS/EXTEDUCATION/EXTDATASTATISTICS/EXTEDSTATS/0,,menuPK:3232818~pagePK:64168427~piPK:64168435~theSitePK:3232764,00.html</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>196</th>
+      <td>u.s. census: dataferrett</td>
+      <td>18.70%</td>
+      <td>69</td>
+      <td>dataferrett.census.gov</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>197</th>
+      <td>pew research: religion</td>
+      <td>23.58%</td>
+      <td>68</td>
+      <td>www.pewforum.org</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>198</th>
+      <td>florida</td>
+      <td>5.69%</td>
+      <td>68</td>
+      <td>www.fldoe.org/eias/eiaspubs</td>
+      <td>free</td>
+    </tr>
+    <tr>
+      <th>199</th>
+      <td>pollingreport.com</td>
+      <td>23.58%</td>
+      <td>68</td>
+      <td>www.pollingreport.com</td>
+      <td>hybrid</td>
+    </tr>
+    <tr>
+      <th>200</th>
+      <td>nlm: data sharing resources (u.s. national library of medicine)</td>
+      <td>20.33%</td>
+      <td>67</td>
+      <td>www.nlm.nih.gov/NIHbmic/nih_data_sharing_repositories.html</td>
+      <td>free</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>
